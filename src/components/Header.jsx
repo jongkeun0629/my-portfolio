@@ -121,7 +121,6 @@ const Header = ({ profile }) => {
         </div>
       </header>
 
-      {/* 스크롤 후 상단 고정 네비게이션 */}
       {isSticky && (
         <nav className="fixed top-0 left-0 right-0 bg-white shadow-md z-50 flex justify-center gap-6 py-3">
           {[

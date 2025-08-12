@@ -62,9 +62,9 @@
 
   "education": [
     {
-      "school": "OO대학교",
-      "degree": "IT SoftWare",
-      "period": "2019.03 - 2024.02",
+      "school": "평생교육진흥원",
+      "degree": "컴퓨터 공학",
+      "period": "2024.04 - 2024.08",
       "highlights": [
         "데이터베이스/운영체제/네트워크/분산시스템 수강",
         "캡스톤: 대용량 로그 파이프라인 설계 (Kafka 기초 활용)"
@@ -72,7 +72,7 @@
     },
     {
       "school": "OO대학교",
-      "degree": "컴퓨터 공학",
+      "degree": "IT SoftWare",
       "period": "2019.03 - 2024.02",
       "highlights": [
         "데이터베이스/운영체제/네트워크/분산시스템 수강",

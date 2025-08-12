@@ -21,12 +21,12 @@ const ExperienceSection = ({ experience, education, certifications }) => {
                   <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4">
                     <div>
                       <h4 className="flex items-center gap-2 mb-1">
-                        <FaCampground />
+                        <FaCampground className="icon-blue" />
                         {exp.company} - {exp.role}
                       </h4>
                     </div>
                     <div className="flex items-center text-sm gap-2">
-                      <FaCalendarDays />
+                      <FaCalendarDays className="icon-blue" />
                       {exp.period}
                     </div>
                   </div>
@@ -71,7 +71,7 @@ const ExperienceSection = ({ experience, education, certifications }) => {
                       <p>{edu.degree}</p>
                     </div>
                     <div className="flex items-center gap-2 text-sm">
-                      <FaCalendarDays className="w-4 h-4" />
+                      <FaCalendarDays className="icon-blue" />
                       {edu.period}
                     </div>
                   </div>
