@@ -4,9 +4,12 @@ import { SiGithub } from "react-icons/si";
 
 const ProjectsSection = ({ projects }) => {
   return (
-    <section id="projects" className="py-20 px-4">
+    <section
+      id="projects"
+      className="bg-gradient-to-tr from-blue-100 to-slate-100 min-h-screenpy-20 px-4"
+    >
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-4xl font-bold mb-12 text-center gradient-text">
+        <h2 className="text-4xl font-bold mb-12 pb-2 text-center gradient-text">
           Projects
         </h2>
 
@@ -18,7 +21,7 @@ const ProjectsSection = ({ projects }) => {
                   <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4">
                     <h3 className="mb-2 sm:mb-0">{project.name}</h3>
                     <div className="flex items-center gap-2 text-sm">
-                      <FaClock className="w-4 h-4" />
+                      <FaClock className="icon-blue" />
                       {project.period}
                     </div>
                   </div>
@@ -46,7 +49,7 @@ const ProjectsSection = ({ projects }) => {
                       <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
                         {project.metrics.users && (
                           <div className="flex items-center gap-2">
-                            <FaUser className="w-4 h-4" />
+                            <FaUser className="icon-blue" />
                             <span className="text-sm">
                               {project.metrics.users.toLocaleString()} users
                             </span>
@@ -54,7 +57,7 @@ const ProjectsSection = ({ projects }) => {
                         )}
                         {project.metrics.teams && (
                           <div className="flex items-center gap-2">
-                            <FaUser className="w-4 h-4" />
+                            <FaUser className="icon-blue" />
                             <span className="text-sm">
                               {project.metrics.teams} teams
                             </span>
@@ -62,7 +65,7 @@ const ProjectsSection = ({ projects }) => {
                         )}
                         {project.metrics.monthly_active_users && (
                           <div className="flex items-center gap-2">
-                            <FaArrowTrendUp className="w-4 h-4" />
+                            <FaArrowTrendUp className="icon-blue" />
                             <span className="text-sm">
                               {project.metrics.monthly_active_users} MAU
                             </span>
@@ -70,15 +73,7 @@ const ProjectsSection = ({ projects }) => {
                         )}
                         {project.metrics.peak_rps && (
                           <div className="flex items-center gap-2">
-                            <FaArrowTrendUp className="w-4 h-4" />
-                            <span className="text-sm">
-                              {project.metrics.peak_rps} RPS
-                            </span>
-                          </div>
-                        )}
-                        {project.metrics.peak_rps && (
-                          <div className="flex items-center gap-2">
-                            <FaArrowTrendUp className="w-4 h-4" />
+                            <FaArrowTrendUp className="icon-blue" />
                             <span className="text-sm">
                               {project.metrics.peak_rps} RPS
                             </span>
@@ -86,7 +81,7 @@ const ProjectsSection = ({ projects }) => {
                         )}
                         {project.metrics.p95_latency_ms && (
                           <div className="flex items-center gap-2">
-                            <FaClock className="w-4 h-4" />
+                            <FaClock className="icon-blue" />
                             <span className="text-sm">
                               p95: {project.metrics.p95_latency_ms}ms
                             </span>
@@ -94,7 +89,7 @@ const ProjectsSection = ({ projects }) => {
                         )}
                         {project.metrics.availability && (
                           <div className="flex items-center gap-2">
-                            <FaArrowTrendUp className="w-4 h-4" />
+                            <FaArrowTrendUp className="icon-blue" />
                             <span className="text-sm">
                               {project.metrics.availability} uptime
                             </span>

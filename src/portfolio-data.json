@@ -2,7 +2,7 @@
   "profile": {
     "name": "jongkeun",
     "title": "Web Developer (Junior)",
-    "one_liner": "신뢰 가능한 API와 자동화된 배포 파이프라인에 진심인 백엔드 엔지니어",
+    "one_liner": "한 줄 소개",
     "summary": "Spring Boot와 Node/Nest로 REST/GraphQL API를 설계·구현하고, Docker·GitHub Actions·AWS로 배포 자동화를 구성해 본 신입 백엔드 엔지니어입니다. 트래픽 이슈를 마주하면 쿼리 튜닝과 캐시 전략부터 고민하고, 프런트(React) 팀과 효율적인 협업을 위해 스키마-우선 API 설계를 선호합니다.",
     "location": "Seoul, KR",
     "email": "dlwhdrms0629@gmail.com",
@@ -62,9 +62,18 @@
 
   "education": [
     {
-      "school": "OO대학교 컴퓨터공학과",
-      "degree": "B.S. Computer Science",
-      "period": "2019.03 - 2025.02",
+      "school": "OO대학교",
+      "degree": "IT SoftWare",
+      "period": "2019.03 - 2024.02",
+      "highlights": [
+        "데이터베이스/운영체제/네트워크/분산시스템 수강",
+        "캡스톤: 대용량 로그 파이프라인 설계 (Kafka 기초 활용)"
+      ]
+    },
+    {
+      "school": "OO대학교",
+      "degree": "컴퓨터 공학",
+      "period": "2019.03 - 2024.02",
       "highlights": [
         "데이터베이스/운영체제/네트워크/분산시스템 수강",
         "캡스톤: 대용량 로그 파이프라인 설계 (Kafka 기초 활용)"
@@ -74,9 +83,9 @@
 
   "experience": [
     {
-      "company": "스타트업 OO",
-      "role": "백엔드 인턴",
-      "period": "2024.07 - 2024.09",
+      "company": "멋쟁이 사자처럼",
+      "role": "백엔드 JAVA 부트캠프",
+      "period": "2025.05 - 2025.11",
       "summary": "NestJS 기반 사용자/결제 API 유지보수 및 성능 개선",
       "achievements": [
         "N+1 쿼리 제거 및 인덱스 추가로 주문 조회 API p95 720ms → 210ms",
@@ -208,8 +217,8 @@
   ],
 
   "certifications": [
-    { "name": "정보처리기사", "year": 2024 },
-    { "name": "AWS Cloud Practitioner", "year": 2025 }
+    { "name": "정보처리기사", "year": 2025 },
+    { "name": "SQLD", "year": 2025 }
   ],
 
   "writing": [

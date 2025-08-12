@@ -87,3 +87,7 @@ html {
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
+
+.icon-blue {
+  @apply w-4 h-4 text-blue-500;
+}

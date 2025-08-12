@@ -3,15 +3,18 @@ import { FaLocationDot } from "react-icons/fa6";
 
 const AboutSection = ({ profile }) => {
   return (
-    <section id="about" className="py-20 px-4">
+    <section
+      id="about"
+      className="bg-gradient-to-tr from-blue-100 to-slate-100 min-h-screen py-20 px-4"
+    >
       <div className=" max-w-4xl mx-auto">
-        <h2 className="text-4xl font-bold mb-12 text-center gradient-text">
+        <h2 className="text-4xl font-bold mb-12 pb-2 text-center gradient-text">
           About
         </h2>
 
         <Card size="3" className="glass">
           <div className="flex items-center gap-2 mb-4">
-            <FaLocationDot className="w-4 h-4" />
+            <FaLocationDot className="icon-blue" />
             {profile.location}
           </div>
 
