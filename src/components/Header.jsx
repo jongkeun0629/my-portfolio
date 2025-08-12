@@ -1,14 +1,19 @@
 import { Button } from "@radix-ui/themes";
-import { useEffect } from "react";
 import { SiGithub, SiVelog, SiLinkedin, SiGmail } from "react-icons/si";
 
 const Header = ({ profile }) => {
-  useEffect(() => console.log(profile), []);
+  // 직접적으로 DOM 컨트롤하지만 단순 스크롤 이동
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <header className="min-h-screen flex flex-col justify-center items-center text-center px-4">
       <div className="max-w-4xl mx-auto">
-        <h1 className="text-6xl font-bold mb-4 animate-fade-up text-blue-500">
+        <h1 className="text-6xl font-bold mb-4 pb-2 animate-fade-up gradient-text">
           {profile.name}
         </h1>
         <h2
@@ -88,6 +93,7 @@ const Header = ({ profile }) => {
               key={section}
               className="relative group animate-fade-up text-gray-600 transition-all duration-300 font-medium capitalize hover:text-blue-600"
               style={{ animationDelay: `${0.6 + index * 0.1}s` }}
+              onClick={() => scrollToSection(section)}
             >
               {section}
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 group-hover:w-full transition-all duration-300" />
