@@ -1,5 +1,6 @@
 import { Button, Card } from "@radix-ui/themes";
 import { FaCalendarDays, FaLink } from "react-icons/fa6";
+import { SiGithub } from "react-icons/si";
 
 const WritingSection = ({ writing, talks, openSource }) => {
   return (
@@ -65,6 +66,33 @@ const WritingSection = ({ writing, talks, openSource }) => {
                 </div>
               </>
             )}
+          </div>
+
+          <div>
+            <h3 className="mb-6">Open Source</h3>
+            <div className="space-y-4">
+              {openSource.map((contribution, conIndex) => (
+                <Card key={conIndex} size="2">
+                  <h4 className="mb-2">{contribution.name}</h4>
+                  <div>
+                    <span className="inline-block px-2 py-1 rounded text-xs">
+                      {contribution.type}
+                    </span>
+                    <p className="text-sm mb-3">{contribution.summary}</p>
+                    <Button asChild variant="outline" size="sm">
+                      <a
+                        href={contribution.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <SiGithub className="icon-blue" />
+                        View Contribution
+                      </a>
+                    </Button>
+                  </div>
+                </Card>
+              ))}
+            </div>
           </div>
         </div>
       </div>
