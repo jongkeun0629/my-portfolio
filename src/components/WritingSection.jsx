@@ -21,7 +21,7 @@ const WritingSection = ({ writing, talks, openSource }) => {
                 <Card key={postIndex} size="2">
                   <h4 className="mb-2">{post.title}</h4>
                   <div className="flex items-center gap-2 text-sm mb-3">
-                    <FaCalendarDays className="w-4 h-4" />
+                    <FaCalendarDays className="icon-blue" />
                     {new Date(post.date).toLocaleDateString("ko-KR")}
                   </div>
                   <Button asChild variant="outline" size="sm">
@@ -48,7 +48,7 @@ const WritingSection = ({ writing, talks, openSource }) => {
                       <h4 className="mb-2">{talk.title}</h4>
                       <p className="text-sm mb-2">{talk.event}</p>
                       <div className="flex items-center gap-2 text-sm mb-3">
-                        <FaCalendarDays className="w-4 h-4" />
+                        <FaCalendarDays className="icon-blue" />
                         {new Date(talk.date).toLocaleDateString("ko-KR")}
                       </div>
                       <Button asChild variant="outline" size="sm">
